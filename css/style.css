@@ -1,0 +1,423 @@
+/* 
+*Author: Hasan
+*Contact: hasanrafi69@gmail.com
+*Github: https://github.com/hasanrafi69
+*FB:fb.me/hasanrafi69
+*/
+
+
+/* ===============
+    All Font
+================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Varela+Round&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Varela Round', sans-serif; */
+	background: #F3F1FF;
+}
+
+
+/* ===================
+     Layout CSS
+===================== */
+
+section {
+	padding: 10px 0;
+}
+
+.container {
+	max-width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-fluid {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+
+.col {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 2px;
+}
+
+.col-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2px;
+}
+
+.col-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2px;
+}
+
+.col-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2px;
+}
+
+.col-5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 2px;
+}
+
+.col-6 {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 2px;
+	justify-content: center;
+}
+
+
+/*common media query */
+
+@media only screen and (max-width: 375px) {
+	.col,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+	.col,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.bg-white {
+	background: #ffffff;
+}
+
+hr {
+	border: 1px solid #D1D1D1;
+}
+
+.clear-both {
+	clear: both;
+}
+
+
+/* =================
+    Header Part
+=================== */
+
+
+/* .main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+} */
+
+#header {
+	background: #562EFF;
+	height: 94px;
+}
+
+.main-menu {
+	display: grid;
+	grid-template-columns: 200px 100% 100px;
+}
+
+.brand {
+	max-width: 130px;
+	height: auto;
+	font-size: 16px;
+}
+
+.brand img {
+	width: 35%;
+	padding: 15px 0 0 0;
+}
+
+.brand a {
+	color: #fff;
+}
+
+.main-menu .menu-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main-menu .menu-item li {
+	padding: 5px 10px;
+	font-size: 18px;
+}
+
+.main-menu .profile {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main-menu .menu-item li a {
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.main-menu .profile {
+	display: flex;
+	position: relative;
+	top: 5px;
+	left: 20%;
+}
+
+.dropdown {
+	position: absolute;
+	top: 65px;
+	left: 0;
+	display: none;
+}
+
+.dropdown li {
+	background: #562eff;
+}
+
+.dropdown li a {
+	font-size: 15px;
+}
+
+.profile:hover .dropdown {
+	display: block;
+}
+
+
+/* =================
+    Player Section
+=================== */
+
+.title {
+	padding: 10px 5px;
+	font-size: 18px;
+}
+
+.title h3 {
+	color: #562EFF;
+}
+
+.players {
+	border-bottom: 1px solid #D1D1D1;
+}
+
+.player {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 5px;
+}
+
+.player h1 {
+	font-size: 16px;
+	padding-left: 5px;
+	font-weight: 500;
+}
+
+.player img {
+	width: 15%;
+}
+
+
+/* =================
+    Blog Section
+=================== */
+
+.blog {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	padding: 5px 0;
+	justify-content: center;
+}
+
+.blog .thumbnail {
+	width: 42%;
+}
+
+.blog-details {
+	padding-left: 10px;
+}
+
+.blog-details h3,
+.blog-details p {
+	font-weight: 500;
+}
+
+
+/* =================
+    Course Section
+=================== */
+
+.courses {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.course .thumbnail {
+	width: 95%;
+}
+
+.course .thumbnail img {
+	height: 250px;
+}
+
+.course-content h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.course-content p {
+	font-size: 14px;
+	color: #ED6B4F;
+}
+
+.course-extra {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px 0 0;
+}
+
+.time {
+	background: #FFE4E8;
+	padding: 0 3px;
+	border-radius: 5px;
+}
+
+.fa.fa-star {
+	color: #FFC014;
+}
+
+.star .fal {
+	color: #A2A2A2;
+}
+
+.time span,
+.time i {
+	color: #FF4A60;
+}
+
+
+/* =================
+    Footer Part
+=================== */
+
+
+/* ========================
+        Media Query
+========================== */
+
+
+/*common media query */
+
+@media only screen and (max-width: 375px) {
+	#players {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/* Common */
+	/* .title {
+        margin-left: 35px;
+    } */
+	.title h3 {
+		color: #562EFF;
+		font-size: 18px;
+	}
+	.player h1 {
+		font-size: 12px;
+	}
+	/* Header */
+	.main-menu .menu-item {
+		position: absolute;
+		top: 62px;
+	}
+	.main-menu .menu-item li {
+		padding: 5px 10px;
+	}
+	.main-menu .menu-item li {
+		font-size: 16px;
+	}
+	.brand img {
+		padding: 5px 0 0 0;
+	}
+	.main-menu .profile {
+		position: absolute;
+		top: -55px;
+		left: 80%;
+	}
+	.dropdown {
+		top: 58px;
+	}
+	/* Player Section */
+	.player img {
+		width: 40%;
+	}
+	/* Blog Section */
+	.blog {
+		display: grid;
+		grid-gap: 5px;
+		padding: 5px 5px;
+	}
+	.blog .thumbnail {
+		width: 100%;
+	}
+	.blog-details h3,
+	.course-content h2 {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	/* Course Section */
+	.course .thumbnail img {
+		height: 130px;
+	}
+	.star,
+	.time {
+		font-size: 12px;
+	}
+}
