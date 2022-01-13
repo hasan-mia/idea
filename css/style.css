@@ -128,6 +128,7 @@ li {
 
 .bg-white {
 	background: #ffffff;
+	padding: 15px;
 }
 
 hr {
@@ -202,7 +203,7 @@ hr {
 	display: flex;
 	position: relative;
 	top: 5px;
-	left: 20%;
+	left: 23%;
 }
 
 .dropdown {
@@ -270,15 +271,18 @@ hr {
 	flex-wrap: nowrap;
 	flex-direction: row;
 	padding: 5px 0;
-	justify-content: center;
 }
 
 .blog .thumbnail {
 	width: 42%;
 }
-
+.blog .thumbnail img {
+	width: 225px;
+	border-radius: 15px;
+}
 .blog-details {
 	padding-left: 10px;
+	padding-right: 20px;
 }
 
 .blog-details h3,
@@ -296,13 +300,17 @@ hr {
 	flex-wrap: wrap;
 	flex-direction: row;
 }
-
+.course {
+    padding: 10px 5px;
+}
 .course .thumbnail {
 	width: 95%;
 }
 
 .course .thumbnail img {
 	height: 250px;
+	border-radius: 30px;
+	border: 1px solid #ef6b4f3b;
 }
 
 .course-content h2 {
@@ -376,12 +384,13 @@ hr {
 	.main-menu .menu-item {
 		position: absolute;
 		top: 62px;
+		left: 30px;
 	}
 	.main-menu .menu-item li {
 		padding: 5px 10px;
 	}
 	.main-menu .menu-item li {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.brand img {
 		padding: 5px 0 0 0;
@@ -389,7 +398,7 @@ hr {
 	.main-menu .profile {
 		position: absolute;
 		top: -55px;
-		left: 80%;
+		left: 77%;
 	}
 	.dropdown {
 		top: 58px;
@@ -407,6 +416,9 @@ hr {
 	.blog .thumbnail {
 		width: 100%;
 	}
+	.blog .thumbnail img {
+		width: 100%;
+	}
 	.blog-details h3,
 	.course-content h2 {
 		font-size: 15px;
@@ -415,6 +427,7 @@ hr {
 	/* Course Section */
 	.course .thumbnail img {
 		height: 130px;
+		border-radius: 20px;
 	}
 	.star,
 	.time {
