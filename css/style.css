@@ -200,9 +200,20 @@ hr {
 
 .dropdown {
 	position: absolute;
-	top: 65px;
+	top: 55px;
 	left: 0;
-	display: none;
+	border-radius: 10px;
+	z-index: 1;
+	display: block;
+    transition: opacity .7s ease-in-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+}
+
+.profile:hover .dropdown {
+	height: auto;
+    opacity: 1;
 }
 
 .dropdown li {
@@ -211,10 +222,11 @@ hr {
 
 .dropdown li a {
 	font-size: 15px;
+	transition: 1s;
 }
 
-.profile:hover .dropdown {
-	display: block;
+.dropdown li:hover a{
+	border-bottom: 1px solid darkblue;
 }
 
 
