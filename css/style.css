@@ -188,6 +188,10 @@ hr {
 	font-size: 18px;
 }
 
+.main-menu > .menu-item > li:hover a {
+    border-bottom: 2px solid #dedede;
+}
+
 .main-menu .profile {
 	display: flex;
 	justify-content: flex-end;
@@ -232,7 +236,7 @@ hr {
 }
 
 .dropdown li:hover a{
-	border-bottom: 1px solid darkblue;
+	border-bottom: 1px solid #fff;
 }
 
 
@@ -264,7 +268,7 @@ hr {
 
 .player h1 {
 	font-size: 16px;
-	padding-left: 5px;
+	padding-left: 10px;
 }
 
 .player img {
