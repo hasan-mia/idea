@@ -463,7 +463,7 @@ address {
 
 /* Very Small Device */
 
-@media only screen and (max-width: 280) {
+@media only screen and (max-width: 280px) {
 	.main-menu .menu-item li {
 		padding: 5px 0px;
 	}
