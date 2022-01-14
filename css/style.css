@@ -461,7 +461,19 @@ address {
 ========================== */
 
 
+/* Very Small Device */
+
+@media only screen and (max-width: 280) {
+	.main-menu .menu-item li {
+		padding: 5px 0px;
+	}
+	.main-menu .menu-item li a {
+		padding-right: 5px;
+	}
+}
+
 /* Small Mobile Device */
+
 @media  only screen and (max-width: 375px) {
 	.main-menu .profile {
 		left: 70%;
