@@ -21,7 +21,7 @@
         background: #F3F1FF;
     }
     /* ===================
-     Layout CSS
+ Layout CSS
 ===================== */
     
     section {
@@ -137,7 +137,7 @@
         clear: both;
     }
     /* =================
-    Header Part
+Header Part
 =================== */
     
     #header {
@@ -229,7 +229,7 @@
         border-bottom: 1px solid #fff;
     }
     /* =================
-    Player Section
+Player Section
 =================== */
     
     .title {
@@ -263,7 +263,7 @@
         width: 15%;
     }
     /* =================
-    Blog Section
+Blog Section
 =================== */
     
     .blogs {
@@ -298,7 +298,7 @@
         padding-top: 20px;
     }
     /* =================
-    Course Section
+Course Section
 =================== */
     
     #course .bg-white {
@@ -359,7 +359,7 @@
         color: #FF4A60;
     }
     /* =================
-    Footer Part
+Footer Part
 =================== */
     
     #footer {
@@ -441,7 +441,7 @@
         background: #170859;
     }
     /* ========================
-        Media Query
+    Media Query
 ========================== */
     /* Very Small Device */
     
