@@ -44,7 +44,6 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: center;
     }
     
     .col {
@@ -561,11 +560,11 @@ Footer Part
         }
         .main-menu .menu-item {
             position: absolute;
-            top: 62px;
-            left: 30px;
+            top: 4rem;
+            left: 4rem;
         }
         .main-menu .menu-item li {
-            padding: 0 0 0 4.5rem;
+            padding: 0 0 0 4rem;
         }
         .brand img {
             padding: 5px 0 0 0;
